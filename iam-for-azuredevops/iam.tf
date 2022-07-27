@@ -20,7 +20,7 @@ resource "aws_iam_policy" "ado_iam_policy" {
                 "s3:*"
             ],
             "Effect": "Allow",
-            "Resource": ""${aws_s3_bucket.state_bucket.arn}"",
+            "Resource": "${var.s3_bucket_arn}",
             "Sid": "AllowS3Read"
         },
         {
