@@ -1,0 +1,5 @@
+tfstate_s3_bucket_name = "azuredevops27072022"
+tfstate_dynamo_db_table_name = "terraformlocktable"
+tfstate_s3_bucket_region = "eu-west-1"
+iam_user_name = "AzureDevOpsUser"
+aws_iam_policy_name = "AzureDevOpspolicy"
