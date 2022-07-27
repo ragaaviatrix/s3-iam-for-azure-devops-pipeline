@@ -8,9 +8,9 @@ module "tfstate_s3_backend" {
 
 #create IAM user for azuredevops connection
 module "iam_user_for_azuredevops" {
-  source = "./iam-for-azuredevops"
-  s3_bucket_arn = module.tfstate_s3_backend.s3_bucket_arn
-  iam_user_name = var.iam_user_name
+  source              = "./iam-for-azuredevops"
+  s3_bucket_arn       = module.tfstate_s3_backend.s3_bucket_arn
+  iam_user_name       = var.iam_user_name
   aws_iam_policy_name = var.aws_iam_policy_name
 }
 
