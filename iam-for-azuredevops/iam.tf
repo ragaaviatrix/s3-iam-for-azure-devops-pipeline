@@ -24,14 +24,6 @@ resource "aws_iam_policy" "ado_iam_policy" {
             "Sid": "AllowS3Read"
         },
         {
-            "Action": [
-                "*"
-            ],
-            "Effect": "Allow",
-            "Resource": "*",
-            "Sid": "AllowAllPermissions"
-        },
-        {
             "Effect":"Allow",
             "Action": [
                "ec2:AuthorizeSecurityGroupIngress",
